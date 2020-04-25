@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <div id="header">
     <div id="heading">
       <a href="#" @click.prevent id="menu">
         <img src="@/assets/svgs/menu.svg" />
@@ -16,7 +16,7 @@
       <app-button id="btn-register">Join Now</app-button>
       <app-button id="btn-login">Login</app-button>
     </div>
-  </header>
+  </div>
 </template>
 
 <script>
@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style scoped>
-header {
+#header {
   background: #f7cb82;
   text-align: center;
   padding: 13px 16px 10px;
@@ -41,6 +41,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 40px;
 }
 
 #menu > img,
