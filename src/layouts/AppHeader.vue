@@ -3,7 +3,7 @@
     <div id="heading">
       <a href="#" @click.prevent id="menu">
         <img src="@/assets/svgs/menu.svg" />
-        <span>A- Z</span>
+        <span>A - Z</span>
       </a>
       <a href="#" @click.prevent id="brand">
         <img src="@/assets/svgs/brand.svg" />

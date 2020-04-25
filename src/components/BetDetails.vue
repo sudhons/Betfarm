@@ -53,8 +53,12 @@ export default {
         return "Not Started";
       }
 
+      if (gameTime >= 90) {
+        return `Full Time ${gameTime}"`;
+      }
+
       if (gameTime > 45) {
-        return `2nd Half ${gameTime % 45}"`;
+        return `2nd Half ${gameTime}"`;
       }
 
       return `1st Half ${gameTime}"`;
