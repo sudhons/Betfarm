@@ -1,10 +1,12 @@
 <template>
   <div id="header">
     <div id="heading">
-      <a href="#" @click.prevent id="menu">
-        <img src="@/assets/svgs/menu.svg" />
+      <div id="menu">
+        <a href="#" @click.prevent>
+          <img src="@/assets/svgs/menu.svg" />
+        </a>
         <span>A - Z</span>
-      </a>
+      </div>
       <a href="#" @click.prevent id="brand">
         <img src="@/assets/svgs/brand.svg" />
       </a>
@@ -44,19 +46,21 @@ export default {
   height: 40px;
 }
 
-#menu > img,
-#search > img {
-  width: 18px;
-}
-
 #menu {
   display: flex;
+  align-items: top;
+}
+
+#menu img,
+#search img {
+  width: 18px;
 }
 
 #menu span {
   font-weight: bold;
   font-size: 14px;
   margin-left: 8px;
+  line-height: 18px;
 }
 
 #auth {
