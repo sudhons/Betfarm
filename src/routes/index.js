@@ -5,6 +5,10 @@ import Unavailable from "@/components/Unavailable.vue";
 export default [
   {
     path: '/',
+    redirect: '/football'
+  },
+  {
+    path: '/',
     component: Layout,
     children: [
       {
