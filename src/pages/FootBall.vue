@@ -11,9 +11,15 @@
       </li>
     </ul>
 
-    <keep-alive>
-      <component :is="selectedComponent" :selectedEvents.sync="selectedEvents" :leagues="resource" />
-    </keep-alive>
+    <transition name="fade" mode="out-in">
+      <keep-alive>
+        <component
+          :is="selectedComponent"
+          :selectedEvents.sync="selectedEvents"
+          :leagues="resource"
+        />
+      </keep-alive>
+    </transition>
 
     <bet-booking v-if="betSlip" :numberOfBet="betSlip" />
   </section>
@@ -120,5 +126,14 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.5s ease-in;
 }
 </style>
