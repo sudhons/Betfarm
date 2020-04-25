@@ -1,0 +1,40 @@
+.table-grid-head,
+.table-grid-body {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  align-items: center;
+  text-align: center;
+  grid-column-gap: 1px;
+  padding: 3px 0;
+}
+
+.table-grid-head {
+  padding: 3px 13px;
+  background-color: #f7cb82;
+  height: 32px;
+}
+
+.table-grid-body {
+  margin: 0 13px;
+}
+
+.table-grid-body + :not(.table-grid-head) {
+  border-top: 1px solid #dadada;
+}
+
+.col-0 {
+  grid-column: 1 / span 5;
+  text-align: left;
+}
+
+.col-1 {
+  grid-column: 6 / span 2;
+}
+
+.col-2 {
+  grid-column: 8 / span 2;
+}
+
+.col-3 {
+  grid-column: 10 / span 2;
+}
