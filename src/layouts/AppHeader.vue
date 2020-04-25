@@ -33,6 +33,7 @@ header {
   background: #f7cb82;
   text-align: center;
   padding: 13px 16px 10px;
+  height: 101px;
 }
 
 #heading {
