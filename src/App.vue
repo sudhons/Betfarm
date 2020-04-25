@@ -63,7 +63,6 @@ a {
 html,
 body,
 #app {
-  min-height: 100vh;
   background-color: #f3eac6;
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
